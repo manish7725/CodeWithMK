@@ -11,25 +11,34 @@ package day2.string.manish;
  */
 public interface StringADT {
     
+   
     public void printEachCharacterInString(String s);
     
-    public void maximumOccuringCharacter(String s);
+    public int  maximumOccuringCharacter(String s);
     
-    public void removeDuplicate(String s);
+    public String removeDuplicate(char [] s);
     
-    public void checkStringsAreRotaionOfOther(String s1,String s2);
+     //MANISH--> ANISHM  -> NISHMA--> ISHMAN
+    public boolean checkStringsAreRotaionOfOther(String s1,String s2);  //   --> Reimplement--> Permutation
     
-    public void reverseString(String s);
+    public String reverseString(String s);
     
-    public void printNonRepeatingCharacter(String s);
+    // AAABCDDDEEFGH  BCFGH
+    public String printNonRepeatingCharacter(String s);
     
     public boolean checkAnagram(String s1,String s2);
+    
+    public boolean checkAnagramOfBinaryRepresentationAndItsComplement(int a);
     
     public boolean checkForPalindrome(String s1);
     
     public int [] convertStringToInteger(String s);
     
     public char removeGivenCharacterFromString(String s,char c);
+    
+    public int calculateHammingDistance(String s1, String s2);
+    
+    public boolean checknDistanceApart(String s1,String s2,int k);
     
  
 }

@@ -17,7 +17,7 @@ public class ConversionBetweenStringAndBuilder {
         
         StringBuffer sb1=new StringBuffer(s);
         
-        StringBuffer sb2=new StringBuffer();
+        StringBuffer sb2=new StringBuffer("Manish2");
         System.out.println(sb2.toString());
         //System.out.println(sb1);
         

@@ -12,8 +12,8 @@ package day2.string.manish;
 public class MutabilityTest {
     public static void StrConcat(String str1) 
     { 
-        //str1 = str1.concat("Edureka"); 
-        str1=str1+"Edureka";
+        str1 = str1.concat("Edureka"); 
+        //str1=str1+"Edureka";  ==> //Hello   Edurek and Hell Edureka
     } 
    
     public static void StrBufConcat(StringBuffer str2) 
