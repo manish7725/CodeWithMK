@@ -72,8 +72,11 @@ public class StringDemo {
 //         String s=si.reverseString("Manish");  
 //         System.out.println(s);
         
-            String s= si.printNonRepeatingCharacter("MMMAANISHHP");
-            System.out.println(s);
+//            String s= si.printNonRepeatingCharacter("MMMAANISHHP");
+//            System.out.println(s);
+
+           boolean b= si.checkAnagramOfBinaryRepresentationAndItsComplement(8);
+           System.out.println(b);
         
     }
     
