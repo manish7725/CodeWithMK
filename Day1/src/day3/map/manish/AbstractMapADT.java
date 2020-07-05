@@ -60,13 +60,11 @@ public abstract class AbstractMapADT<K,V> implements MapADT<K,V>{
     private class KeyIterator implements Iterator<K>{
 
         private Iterator<Entry<K,V>> entries=entrySet().iterator();
-        
-        @Override
+       
         public boolean hasNext() {
           return entries.hasNext();
         }
 
-        @Override
         public K next() {
           return entries.next().getKey();
         }
@@ -78,15 +76,16 @@ public abstract class AbstractMapADT<K,V> implements MapADT<K,V>{
     }
     
     private class KeyIterable implements Iterable<K>{
-
-        @Override
         public Iterator<K> iterator() {
             return new KeyIterator();
         }
     
     }
     
-    
+    @Override
+    public Iterable<K> keySet(){
+    return new KeyIterable();
+    }
     private class ValueIterator implements Iterator<V>{
 
         private Iterator<Entry<K,V>> entries=entrySet().iterator();
@@ -115,6 +114,12 @@ public abstract class AbstractMapADT<K,V> implements MapADT<K,V>{
         }
     
     }
+    
+    public Iterable<V> values(){
+       return new ValueIterable();
+    }
+    
+  
     
     
     
