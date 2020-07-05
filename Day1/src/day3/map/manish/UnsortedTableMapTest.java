@@ -5,6 +5,8 @@
  */
 package day3.map.manish;
 
+import java.util.HashMap;
+
 /**
  *
  * @author 1576202
@@ -21,6 +23,8 @@ public class UnsortedTableMapTest {
         System.out.println( map.get(2));
         System.out.println(map.remove(2));
         System.out.println(map);
+        
+        HashMap m=new HashMap();
                 
        
         

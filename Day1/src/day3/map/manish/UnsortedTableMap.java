@@ -13,12 +13,12 @@ import day1.array.manish.ArrayList;
  */
 public class UnsortedTableMap<K,V> extends AbstractMapADT<K,V> {
     
-    //storage
+
     private ArrayList<MapEntry<K,V>> table=new ArrayList<>();
     
     public UnsortedTableMap(){};
     
-    private int findIndex(K key){
+    private int findIndex(K key){    // 0 
     
         int n=table.size();
         for (int i = 0; i < n; i++) 
@@ -32,15 +32,7 @@ public class UnsortedTableMap<K,V> extends AbstractMapADT<K,V> {
      return table.size();
     }
 
-    @Override
-    public boolean containsKey(Object key) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public boolean containsValue(Object value) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
 
     @Override
     public V get(K key) {
@@ -66,22 +58,16 @@ public class UnsortedTableMap<K,V> extends AbstractMapADT<K,V> {
      if(j==-1) return null;
      int n=size();
      V answer=table.get(j).getValue();
-     if( j!= n-1)
+     if( j!= n-1)                              //
          table.set(j,table.get(n-1));
      table.remove(n-1);
      return answer;    
 
     }
 
-    @Override
-    public Iterable<K> keySet() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public Iterable<V> values() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
+    
+    
 
     @Override
     public Iterable<Entry<K, V>> entrySet() {
