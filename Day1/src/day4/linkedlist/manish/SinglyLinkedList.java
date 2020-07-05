@@ -5,6 +5,8 @@
  */
 package day4.linkedlist.manish;
 
+import day1.array.manish.ArrayList;
+
 /**
  *
  * @author 1576202
@@ -14,6 +16,9 @@ public class SinglyLinkedList<E> implements List<E>{
     private static class Node<E>{
       private final E element;
       private Node<E> next;
+      
+      
+      
       public Node(E e,Node<E> n){
        element=e;
        next=n;
@@ -30,6 +35,7 @@ public class SinglyLinkedList<E> implements List<E>{
     private int size=0;
 
     public SinglyLinkedList() {
+    
     }
     
     @Override
@@ -52,7 +58,7 @@ public class SinglyLinkedList<E> implements List<E>{
     @Override
     public void addFirst(E e){
     head=new Node<>(e,head);
-    if(size==0)
+    if(isEmpty())
         tail=head;
     size++;
     }
