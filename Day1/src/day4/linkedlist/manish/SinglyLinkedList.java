@@ -70,6 +70,8 @@ public class SinglyLinkedList<E> implements List<E>{
         head=newest;
     else
         tail.setNext(newest);
+    
+    
     tail=newest;
     size++;
     }
