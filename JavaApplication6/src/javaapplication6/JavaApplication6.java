@@ -3,21 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package day4.linkedlist.manish;
+package javaapplication6;
 
 /**
  *
  * @author 1576202
  */
-public class DemoList {
+public class JavaApplication6 {
+
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        List<Integer> l=new SinglyLinkedList<>();
-        l.addFirst(1);
-        l.addFirst(0);
-        l.addFirst(0);
+        // TODO code application logic here
         
-        
-       
+        System.out.println(Math.pow(2,3)); 
     }
     
 }

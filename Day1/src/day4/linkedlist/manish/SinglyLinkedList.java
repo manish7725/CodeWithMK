@@ -13,6 +13,10 @@ import day1.array.manish.ArrayList;
  * @param <E>
  */
 public class SinglyLinkedList<E> implements List<E>{
+
+    private SinglyLinkedList getNext() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     private static class Node<E>{
       private final E element;
       private Node<E> next;
@@ -95,7 +99,6 @@ public class SinglyLinkedList<E> implements List<E>{
         temp=temp.next;
     }
     }
-    
     
     
     
