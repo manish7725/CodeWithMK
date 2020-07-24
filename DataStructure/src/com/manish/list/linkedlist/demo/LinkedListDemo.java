@@ -14,21 +14,20 @@ import com.manish.list.linkedlist.LinkedList;
 public class LinkedListDemo {
     public static void main(String[] args) {
         LinkedList<Integer> l=new LinkedList<>();
-        System.out.println(l.isEmpty());
-        //l.addFirst(12);
-        //l.addFirst(13);
-        //l.addFirst(14);
-        //l.addFirst(15);
-        l.addFirst(11);
-        l.addFirst(12);
-        l.addFirst(13);
-        //l.removeFirst();
-        //l.removeFirst();
-        //l.removeFirst();
-        //l.removeFirst();
-        //l.removeFirst();
         
-        l.printAll();
+       l.addFirst(1);
+       l.addFirst(2);
+       l.addFirst(3); 
+       l.addFirst(4);
+       l.addFirst(5);
+       l.addFirst(6);
+       
+       l.printAll();
+       
+       l.deleteNnodesAfterMnodes(3, 2);
+       System.out.println("After Reversal");
+       l.printAll();
+       
     }
             
 }
