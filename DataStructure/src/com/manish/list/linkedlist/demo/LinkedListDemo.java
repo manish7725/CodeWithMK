@@ -6,6 +6,8 @@
 package com.manish.list.linkedlist.demo;
 
 import com.manish.list.linkedlist.LinkedList;
+//import com.manish.list.linkedlist.LinkedList.Node;
+
 
 /**
  *
@@ -13,8 +15,11 @@ import com.manish.list.linkedlist.LinkedList;
  */
 public class LinkedListDemo {
     public static void main(String[] args) {
-        LinkedList<Integer> l=new LinkedList<>();
-        
+       LinkedList<Integer> l=new LinkedList<>();
+       //Node<Integer> x=l.head.getNext();
+       
+       //x.setNext(null);
+       
        l.addFirst(1);
        l.addFirst(2);
        l.addFirst(3); 

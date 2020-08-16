@@ -13,7 +13,7 @@ import com.manish.list.ListADT2;
  */
 public class LinkedList<E> implements ListADT2<E>{
     
-    public static class Node<E>{
+    private static class Node<E>{
         E data;
         Node<E> next;
 

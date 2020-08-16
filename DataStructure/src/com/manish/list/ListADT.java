@@ -9,7 +9,7 @@ package com.manish.list;
  *
  * @author 1576202
  */
-public interface ListADT<E> {
+public interface ListADT<E> extends Iterable<E> {
     
     public int size();
     public boolean isEmpty();
