@@ -7,6 +7,7 @@ package com.manish.list.arrays;
 
 import com.manish.list.ListADT;
 import java.util.Arrays;
+import java.util.Iterator;
 
 /**
  *
@@ -117,6 +118,11 @@ public class ArrayList<E> implements ListADT<E>{
       }
       data=temp;
 
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
