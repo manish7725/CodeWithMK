@@ -44,7 +44,7 @@ public abstract class AbstractTree<E> implements Tree<E>{
     public int hight(Position<E> p){
        int h=0;
        for(Position<E> c:children(p)){
-         h=Math.max(h, hight(c)); 
+         h=Math.max(h, 1+hight(c)); 
        }
        return h;
     }

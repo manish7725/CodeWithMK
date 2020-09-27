@@ -195,7 +195,18 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
     public String toString() {
         return "LinkedBinaryTree{" + "size=" + size + '}';
     }
+     
+    public void printTree(Position<E> p,String space){
+        space=space+" ";
+        if(p==null) return;
+        else{
+        Node<E> node=validate(p);
+        System.out.println(space+node.getElement());
+        printTree(node.getLeft(),space);
+        printTree(node.getRight(),space);
+        }
     
+    }
     
     
     
